@@ -1,0 +1,77 @@
+
+/* ===== HEADER ===== */
+
+.header {
+  background: rgba(15, 15, 26, 0.85); /* fallback */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* ===== LOGO ===== */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: var(--gradient);
+
+  background-clip: text;              /* add this */
+  -webkit-background-clip: text;
+
+  color: transparent;                 /* add this */
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+}
+
+/* ===== NAV LINKS ===== */
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Animated underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--gradient);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== CART BADGE ===== */
+
+.cart-badge {
+  background: var(--primary);
+  padding: 4px 9px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+}

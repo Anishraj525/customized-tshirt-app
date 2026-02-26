@@ -1,0 +1,36 @@
+.order-success-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.order-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.order-box h2 {
+  margin-bottom: 15px;
+  color: #4f46e5;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-box button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.order-box button:hover {
+  background: #4338ca;
+}

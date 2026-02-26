@@ -1,0 +1,29 @@
+/* ===== APP CONTAINER ===== */
+
+.app {
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Smooth page fade animation */
+.page-content {
+  flex: 1;
+  padding: 40px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ===== FADE ANIMATION ===== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
